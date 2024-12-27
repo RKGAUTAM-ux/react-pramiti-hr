@@ -222,6 +222,27 @@ a.nav-link:hover {
     gap: 20px;
 }
 
+/************************************************** Key Benefits Css start ***************************************************/
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.benefit-item {
+    background: #9A72F91A;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/************************************************** statistics Css start ***************************************************/
+
+.statistics-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: space-between;
+}
 /************************************************** Footer Css start ***************************************************/
 
 footer.footer {
