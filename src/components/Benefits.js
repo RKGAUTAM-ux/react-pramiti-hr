@@ -1,44 +1,55 @@
 import React from 'react';
+import efficiencyIcon from '../assets/images/keyb-1.png';
+import accuracyIcon from '../assets/images/keyb-2.png';
+import scalabilityIcon from '../assets/images/keyb-3.png';
+import userFriendlyIcon from '../assets/images/keyb-4.png';
+import costEffectiveIcon from '../assets/images/keyb-5.png';
+import dataSecurityIcon from '../assets/images/keyb-6.png';
 
 const Benefits = () => {
-  const benefits = [
-    {
-      title: 'Efficiency',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    },
-    {
-      title: 'Accuracy',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    },
-    {
-      title: 'Scalability',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    },
-    {
-      title: 'User-Friendly Interface',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      title: 'Cost-Effective',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    },
-    {
-      title: 'Data Security',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    },
-  ];
+    const benefits = [
+        {
+          icon: efficiencyIcon,
+          title: 'Efficiency',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        },
+        {
+          icon: accuracyIcon,
+          title: 'Accuracy',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        },
+        {
+          icon: scalabilityIcon,
+          title: 'Scalability',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        },
+        {
+          icon: userFriendlyIcon,
+          title: 'User-Friendly Interface',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        },
+        {
+          icon: costEffectiveIcon,
+          title: 'Cost-Effective',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        },
+        {
+          icon: dataSecurityIcon,
+          title: 'Data Security',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        },
+    ];
 
   return (
     <section className="benefits-section">
-      <div className="site-container">
         <div className="section-header">
-          <div class="content-title-wrapper"><div class="ct-hr"></div><span class="ct-txt">Why Choose PramitiHR?</span><div class="ct-hr"></div></div>
+          <div className="content-title-wrapper"><div className="ct-hr"></div><span className="ct-txt">Why Choose PramitiHR?</span><div className="ct-hr"></div></div>
           <h2>
             Key <span className="gradient-txt">Benefits</span>
           </h2>
@@ -56,7 +67,6 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-      </div>
     </section>
   );
 };
