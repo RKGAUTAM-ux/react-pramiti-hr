@@ -5,7 +5,12 @@ import aboutUsImage from '../assets/images/about-us-video-img.png'; // Make sure
 import Benefits from '../components/Benefits';
 
 const HomePage = () => {
-
+    const stats = [
+        { value: '80%', label: 'Time Saved', color: '#FF6B6B' },
+        { value: '50%', label: 'Cost Saving', color: '#FFC75F' },
+        { value: '14k', label: 'Users', color: '#4BC0C0' },
+        { value: '365', label: 'Days', color: '#8E44AD' },
+    ];
   return (
     <div className="site-container">
        <HeroBanner /> {/* Add the HeroBanner component */}
@@ -53,7 +58,27 @@ const HomePage = () => {
                 </div>
             </div>
         </section>
-
+        <Benefits />
+        <section className="key-statistics-section">
+            <div className="site-container">
+                <div className="section-header">
+                <div class="content-title-wrapper"><div class="ct-hr"></div><span class="ct-txt">Key Statistics</span><div class="ct-hr"></div></div>
+                <h2>
+                    Impact at a <span className="gradient-txt">Glance</span>
+                </h2>
+                </div>
+                <div className="statistics-grid">
+                {stats.map((stat, index) => (
+                    <div className="stat-item" key={index}>
+                    <span className="stat-value" style={{ color: stat.color }}>
+                        {stat.value}
+                    </span>
+                    <p>{stat.label}</p>
+                    </div>
+                ))}
+                </div>
+            </div>
+        </section>
     </div>
   );
 };
